@@ -1,12 +1,12 @@
-policy "azure-networking-deny-public-rdp-nsg-rules" {
-  source = "./azure-networking-deny-public-rdp-nsg-rules.sentinel"
+policy "deny-public-rdp-nsg-rules" {
+  source = "./policies/deny-public-rdp-nsg-rules/deny-public-rdp-nsg-rules.sentinel"
 }
-policy "azure-networking-enforce-network-watcher-flow-log-retention-period" {
-  source = "./azure-networking-enforce-network-watcher-flow-log-retention-period.sentinel"
+policy "enforce-network-watcher-flow-log-retention-period" {
+  source = "./policies/enforce-network-watcher-flow-log-retention-period/enforce-network-watcher-flow-log-retention-period.sentinel"
 }
-policy "azure-networking-deny-public-ssh-nsg-rules" {
-  source = "./azure-networking-deny-public-ssh-nsg-rules.sentinel"
+policy "deny-public-ssh-nsg-rules" {
+  source = "./policies/deny-public-ssh-nsg-rules/deny-public-ssh-nsg-rules.sentinel"
 }
-policy "azure-networking-deny-any-sql-database-ingress" {
-  source = "./azure-networking-deny-any-sql-database-ingress.sentinel"
+policy "deny-any-sql-database-ingress" {
+  source = "./policies/deny-any-sql-database-ingress/deny-any-sql-database-ingress.sentinel"
 }
