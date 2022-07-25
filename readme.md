@@ -1,0 +1,8 @@
+# Azure Networking Sentinel Policies for Terraform
+
+## Policies included
+
+- **deny-public-rdp-nsg-rules** ([documentation](https://github.com/rclark/policy-library-azure-networking-terraform-policies/blob/main/docs/policies/deny-public-rdp-nsg-rules.md) | [policy code](https://github.com/rclark/policy-library-azure-networking-terraform-policies/blob/main/policies/deny-public-rdp-nsg-rules/deny-public-rdp-nsg-rules.sentinel))
+- **enforce-network-watcher-flow-log-retention-period** ([documentation](https://github.com/rclark/policy-library-azure-networking-terraform-policies/blob/main/docs/policies/enforce-network-watcher-flow-log-retention-period.md) | [policy code](https://github.com/rclark/policy-library-azure-networking-terraform-policies/blob/main/policies/enforce-network-watcher-flow-log-retention-period/enforce-network-watcher-flow-log-retention-period.sentinel))
+- **deny-public-ssh-nsg-rules** ([documentation](https://github.com/rclark/policy-library-azure-networking-terraform-policies/blob/main/docs/policies/deny-public-ssh-nsg-rules.md) | [policy code](https://github.com/rclark/policy-library-azure-networking-terraform-policies/blob/main/policies/deny-public-ssh-nsg-rules/deny-public-ssh-nsg-rules.sentinel))
+- **deny-any-sql-database-ingress** ([documentation](https://github.com/rclark/policy-library-azure-networking-terraform-policies/blob/main/docs/policies/deny-any-sql-database-ingress.md) | [policy code](https://github.com/rclark/policy-library-azure-networking-terraform-policies/blob/main/policies/deny-any-sql-database-ingress/deny-any-sql-database-ingress.sentinel))

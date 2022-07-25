@@ -7,7 +7,7 @@ allNetworkWatcherFlowLogs = filter tfplan.resource_changes as _, resource_change
 			resource_changes.change.actions is ["update"])
 }
 
-print("CIS 6.4: Ensure that Network Security Group Flow Log retention period is greater than 90 days")
+print("Ensure that Network Security Group Flow Log retention period is greater than 90 days")
 
 deny_short_retention_policy = rule {
 	all allNetworkWatcherFlowLogs as _, log {
