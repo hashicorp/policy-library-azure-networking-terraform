@@ -7,8 +7,6 @@ allNetworkWatcherFlowLogs = filter tfplan.resource_changes as _, resource_change
 			resource_changes.change.actions is ["update"])
 }
 
-print("Ensure that Network Security Group Flow Log retention period is greater than 90 days")
-
 deny_short_retention_policy = rule {
 	all allNetworkWatcherFlowLogs as _, log {
 		all log.change.after.retention_policy as retention_policy {
@@ -17,6 +15,16 @@ deny_short_retention_policy = rule {
 	}
 }
 
+// --------------------------------------------------------
+// Name:        deny-any-sql-database-ingress.sentinel
+// Category:    Networking
+// Provider:    hashicorp/azurerm
+// Resource:    azurerm_network_watcher_flow_log
+// Check:       retention_policy.days >= 90
+// --------------------------------------------------------
+// Ensure that Network Security Group Flow Log retention
+// period is greater than 90 days.
+// --------------------------------------------------------
 main = rule {
 	deny_short_retention_policy
 }
