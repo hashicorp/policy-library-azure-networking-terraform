@@ -13,7 +13,7 @@ trace:
       deny-public-ssh-nsg-rules.sentinel:90:1 - Rule "main"
         Description:
           --------------------------------------------------------
-          Name:        deny-any-sql-database-ingress.sentinel
+          Name:        deny-public-ssh-nsg-rules.sentinel
           Category:    Networking
           Provider:    hashicorp/azurerm
           Resource:    azurerm_network_security_group
