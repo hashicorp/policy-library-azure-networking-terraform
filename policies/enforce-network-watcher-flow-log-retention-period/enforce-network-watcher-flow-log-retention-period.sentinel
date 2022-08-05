@@ -15,16 +15,16 @@ deny_short_retention_policy = rule {
 	}
 }
 
-// --------------------------------------------------------
-// Name:        deny-any-sql-database-ingress.sentinel
+// -----------------------------------------------------------------------
+// Name:        enforce-network-watcher-flow-log-retention-period.sentinel
 // Category:    Networking
 // Provider:    hashicorp/azurerm
 // Resource:    azurerm_network_watcher_flow_log
 // Check:       retention_policy.days >= 90
-// --------------------------------------------------------
+// -----------------------------------------------------------------------
 // Ensure that Network Security Group Flow Log retention
 // period is greater than 90 days.
-// --------------------------------------------------------
+// -----------------------------------------------------------------------
 main = rule {
 	deny_short_retention_policy
 }
