@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 policy "deny-public-rdp-nsg-rules" {
   source = "./policies/deny-public-rdp-nsg-rules/deny-public-rdp-nsg-rules.sentinel"
 }
