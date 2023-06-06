@@ -10,20 +10,15 @@ Flow logs enable capturing information about IP traffic flowing in and out of ne
 ## Policy Result (Pass)
 ```bash
     trace:
-      enforce-network-watcher-flow-log-retention-period.sentinel:28:1 - Rule "main"
+      enforce-network-watcher-flow-log-retention-period.sentinel:20:1 - Rule "main"
         Description:
-          -----------------------------------------------------------------------
-          Name:
-          enforce-network-watcher-flow-log-retention-period.sentinel
-          Category:    Networking
-          Provider:    hashicorp/azurerm
-          Resource:    azurerm_network_watcher_flow_log
-          Check:       retention_policy.days >= 90
-          -----------------------------------------------------------------------
           Ensure that Network Security Group Flow Log retention
           period is greater than 90 days.
-          -----------------------------------------------------------------------
 
+        Value:
+          true
+
+      enforce-network-watcher-flow-log-retention-period.sentinel:10:1 - Rule "deny_short_retention_policy"
         Value:
           true
 ```
