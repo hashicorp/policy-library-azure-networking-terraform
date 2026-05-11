@@ -1,3 +1,5 @@
+# Copyright IBM Corp. 2022, 2026
+
 resource_changes = {
 	"azurerm_network_watcher_flow_log.this": {
 		"address": "azurerm_network_watcher_flow_log.this",
