@@ -1,3 +1,5 @@
+# Copyright IBM Corp. 2022, 2026
+
 resource_changes = {
 	"azurerm_resource_group.this": {
 		"address": "azurerm_resource_group.this",
